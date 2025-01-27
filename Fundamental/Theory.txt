@@ -1,0 +1,311 @@
+Python-----------Data Analytics
+
+Web Scraping 
+-Taking other site/website data
+--------------------------------------------------------------------
+Python(Introduction)
+
+     Python is higher level ,most popular, advance, Programing language.
+     Python is an interpreter object oriented language.
+     Python is very easy to understand language
+     python has huge library collection.
+     Python can be use in developing web application, mobile application, desktop application,etc..
+     we can use python also in IOT, machine learing, Artificial intelligience, data analytics, data science, robotics, etc..
+
+    Python Download 
+         How to check wheather it is download or not?
+             For android-
+             Press Windows+R 
+             Type "cmd" in dailoge box.
+             Type "python --version".
+
+             For mac or os
+             Open terminal
+             type"python --version"
+
+             If it show the version than it was installed earlier.
+
+        History of python-
+             Python was invented by Guido Van Raisum.
+             From his favorite comic"Monty Python's flyimg circus.
+
+         visual studio is used to write the code for python.
+         Juypiter is also i app to write the code for python.
+
+Date-13/12/24
+
+Python IDLE:
+     Python IDLE comes with the installation of python software.
+     IDLE:Integrated Development learing Program.
+     idle is use for learing purpose only. 
+     We cannot execute multiple lines at same time.
+
+-----------------------------------------------------------------------------------------
+Print
+     Print is an inbuild function in python.
+     wich is used to display appropriate message on console screen.
+
+     Syntax:Print("Appropriate message)
+
+         There is huge difference between python 2 and python 3.
+             In python 2:Print is a statement.
+             Eg: print"Hello"
+             
+             In python 3:print is a function.
+             Eg: print("Hello")
+
+How to run ?
+      step-1:Write code
+      step-2:Right click on mouse
+      Step-3:Click" Run python in terminal"
+                   or
+      Right side top corner there is run the code option.
+
+-----------------------------------------------------------------------------------------------------
+\ Sequence(Escape)
+
+      \ function is used to write or print  everthing after the \ function.
+      For example:
+           print("C:\\desktop\\python\\nodesjs")
+           print("C:\\desktop\\python\nodesjs")            # In this \n show new line function
+
+     \n is used for new line 
+     \t is used for space in between words
+
+-------------------------------------------------------------------------------------------------
+Comments
+
+      Comments are ignored by compiler or interpreter.
+      Comments are used for explanation of code.
+      Comments we used for error handaling purpose.
+
+      Types of comments:
+           Single line comments: 
+                It is used to comment in single line. 
+                It is denoted by # symbol.
+           Multiple line comments:
+                It is used to comment two or more lines in coding.
+                It is denoted by """ or 3times double inverted comma.
+
+           For example: 
+                #Hello
+                """ Hello
+                How are you?
+                What are you doing"""
+
+
+------------------------------------------------------------------------------------------------------
+
+Variables
+
+      Variables is a name which can store a value.
+      Variable can be used anywhere in program.
+      In python there is no need to declare variable in python.
+      That means no need to declae like int a, string b.
+
+      For Example: 
+           num = 10 #variable define
+           name = "Smit" #variable define
+           print(name)        # shows (Smit)
+           print(num)         # shows (10)
+
+      It is easy if we have a habbit of define variable in small letters.
+
+      Variable declaration rules
+           Variable name always contain 0-9,a-z and underscore.
+           Variable name cannot start with 0-9(digit).
+                name1(right)     1name(x)
+           Variable name does not contain white space.
+                first_name(right)        first name(x)
+           A reserved or keyword cannot be use as a variable name.
+           Make sure variable name start with small letters.
+
+
+      --------------------------------------------------------------------------------------------------------------------------
+Datatypes
+      Which type of value store in variable is called datatype.
+
+      there are mainly three types of daatypes:
+
+           1. Numeric:
+                It contains number(0-9)
+                It is of two types:
+                     int(without point,eg-5000)
+                     float(with point or decimal, eg-50.50)
+
+           2. String:
+                It contains character or alphabets(A-Z).
+                It is denoted by str.
+
+           3. True\False:
+                It is also called as boolean value.
+                It is denoted by bool.
+
+
+      Type: 
+           Type is a function to check which type of value is store in variable.
+
+
+num = 10                            #numeric data type
+name = "Smit"                       #String datatype(""is used for str)
+
+print(type(name))                   #type fun is used to identify which datatype is used
+print(type(num))                    #type fun is used to identify which datatype is used
+
+
+Static value calculation
+
+num1 = 20
+num2 = 30
+
+print(f"{num1} + {num2} = {num1 + num2}")
+
+name = "python"                                    #another example
+marks = 40
+
+print("Name -",name)
+print("Marks =",marks)
+                  Or
+print(f"My subject name is {name} & my marks is {marks}")    
+
+
+----------------------------------------------------------------------------------------------------
+Dynamic value
+      In python we have input() functionfor dynamic value.
+      Input(): it is an inbuilt function which is use to accept value at run time(dynamically) from user.
+      By defult input function accept value in string format
+      syntax: Variable name = input("appropriate prompt")
+
+      Example:
+           name = input("Enter your name here -")
+           
+           print(name)                     #result is (Enter your name here - Smit , Smit)
+
+          
+           num1 = input("Enter a number")
+           num2 = input("Enter a number")
+           ans = num1 + num2
+           print(ans)                      #here ans is wrong due to input function accept value in str format
+           print(f"{num1} + {num2} = {num1 + num2}")       #here ans is wrong due to input function accept value in str format
+            
+      To explict we have to convert in int format.
+           num1 = int(input("Enter number 1 - "))                          #Solution for Dynamic variable 2
+           num2 = int(input("Enter number 2 - "))                          #To accept value in integer format
+           
+           ans = num1 + num2 
+           print(ans)
+           
+                        or
+
+           print(f" {num1} + {num2} = {num1 + num2}")
+
+           
+-----------------------------------------------------------------------------------------------------
+operators
+
+      It is a specific symbol to perform specific operations
+      eg: a + b,
+      here a & b are operands(between a & b perform some operations thats why they are called operands)
+      here + sign is operators
+
+      Types of operators:
+           1. Airthematic operators:
+                +,-,*,/,**(Exponentation),//(Floor division)
+
+           2. Assignment operators:
+                = (to assign)
+ 
+                Shorthand operators:
+                     Combination of airthematic and assignment operators
+                     e.g.- +=,-=,*=,/=,**=,//=.
+                     here += can also be written as a = a+b
+
+           3.Membership operators:
+                in(to check specific element is a member for sequence)
+                not in(to check specific element is not a member for sequence)
+
+
+           4.  Identity operators:
+                is
+                is not
+                Eg: 
+                     a = 20
+                     b = 10
+                     c = a 
+                     d = 20
+
+                     print(a == b)                        # False
+                     print(a is b)                        # False
+                     print(a == c)                        # True
+                     print(a is c)                        # True
+                     print(a == d)                        # True
+                     print(a is d)                        # True  
+
+           5.Relational or comparission operantions:
+                ==, !=, >, <, >=, <=.
+           
+           6. logical operator :
+                and(it will return true when both condition goes true)
+                or (it will return true when one of the condition goes true)
+                not(it will return true when condition not fullfil)
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Condition statement 
+     There are mainly four statement:
+          1. if Statement:
+               It will execute when the condition goes is true.
+               Syntax: if condition :
+                                     statement
+          2. if....else statement:
+               It will execute true statement when condition is true and return false if it goes false.
+               Syntax: if condition :
+                                    true statement
+                       else:
+                                    false statement
+
+          3. elif statement: 
+               it will use for multiplecondition handaling.
+               Syntax: if condition1 :
+                                    true statement1
+                       if condition2 :
+                                    true statement2
+                       if condition3 : 
+                                    true statement3
+                       else:
+                                    false statement
+
+          4.Nested if statement :
+               when condition calling inside the operation.
+               Syntax: if condition :
+                                    if condition:
+                                                  true statement
+                                    else :
+                                                  false statement
+                       else:
+                                    if condition:
+                                                  true statement
+                                    else :
+                                                  false statement
+
+
+
+
+
+                                                  
+               
+
+               
+
+                
+
+
+
+                      
+    
+
+
+
+
+
